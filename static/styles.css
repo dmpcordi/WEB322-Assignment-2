@@ -1,0 +1,59 @@
+body
+{
+    background-color: rgb(132, 255, 255);
+}
+
+#search_button
+{
+    margin-left : 100pt;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+
+
+  legend
+  {
+      margin-left : 50%;
+  }
+
+  
+  #sign_up
+  {
+    text-align : center;
+  }
+
+  #sign_up_message
+  {
+      font-size : 10pt;
+  }
+
+
+  .card {
+    height: 515px;
+    padding: 0;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .card-body {
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+  }
+
+  .card-img {
+    width: 375px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
