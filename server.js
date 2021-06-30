@@ -145,7 +145,7 @@ app.post("/register-user", upload.single("photo"), (req, res) =>
         to: email,
         subject: 'Welcome ' + fname + ' ' + lname + '!',
         text: 'Thanks for joining.'
-      };
+      }
 
       if (!somedata.user_reg_invalid_flag) {
             transporter.sendMail(mailOptions, function(error, info){
