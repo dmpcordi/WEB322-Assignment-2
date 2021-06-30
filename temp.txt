@@ -1,0 +1,100 @@
+2021-06-30T17:04:48.811047+00:00 app[web.1]: 534 5.7.14  https://support.google.com/mail/answer/78754 b7sm11041400qti.21 - gsmtp
+2021-06-30T17:04:48.811048+00:00 app[web.1]: at SMTPConnection._formatError (/app/node_modules/nodemailer/lib/smtp-connection/index.js:774:19)
+2021-06-30T17:04:48.811048+00:00 app[web.1]: at SMTPConnection._actionAUTHComplete (/app/node_modules/nodemailer/lib/smtp-connection/index.js:1518:34)   
+2021-06-30T17:04:48.811048+00:00 app[web.1]: at SMTPConnection.<anonymous> (/app/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+2021-06-30T17:04:48.811049+00:00 app[web.1]: at SMTPConnection._processResponse (/app/node_modules/nodemailer/lib/smtp-connection/index.js:937:20)       
+2021-06-30T17:04:48.811049+00:00 app[web.1]: at SMTPConnection._onData (/app/node_modules/nodemailer/lib/smtp-connection/index.js:739:14)
+2021-06-30T17:04:48.811050+00:00 app[web.1]: at TLSSocket.SMTPConnection._onSocketData (/app/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+2021-06-30T17:04:48.811050+00:00 app[web.1]: at TLSSocket.emit (events.js:375:28)
+2021-06-30T17:04:48.811051+00:00 app[web.1]: at addChunk (internal/streams/readable.js:290:12)
+2021-06-30T17:04:48.811051+00:00 app[web.1]: at readableAddChunk (internal/streams/readable.js:265:9)
+2021-06-30T17:04:48.811052+00:00 app[web.1]: at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-06-30T17:04:48.811052+00:00 app[web.1]: code: 'EAUTH',
+2021-06-30T17:04:48.811053+00:00 app[web.1]: response: '534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu\n' +
+2021-06-30T17:04:48.811053+00:00 app[web.1]: '534-5.7.14 Ggy6_hX1R3U8oZYzIhm4mLmndZh4GsziOhqflyIHYLnERIgdJfcAelGtDvxhyKZeSbE7b\n' +
+2021-06-30T17:04:48.811054+00:00 app[web.1]: '534-5.7.14 ovH__ESAo7DE7TBtj-gixHczusJvL2elMld2MBPaL6_iNjWsJQQ98PxFzKZgdph9>\n' +
+2021-06-30T17:04:48.811054+00:00 app[web.1]: '534-5.7.14 Please log in via your web browser and then try again.\n' +
+2021-06-30T17:04:48.811054+00:00 app[web.1]: '534-5.7.14  Learn more at\n' +
+2021-06-30T17:04:48.811055+00:00 app[web.1]: '534 5.7.14  https://support.google.com/mail/answer/78754 b7sm11041400qti.21 - gsmtp',
+2021-06-30T17:04:48.811055+00:00 app[web.1]: responseCode: 534,
+2021-06-30T17:04:48.811056+00:00 app[web.1]: command: 'AUTH PLAIN'
+2021-06-30T17:04:48.811057+00:00 app[web.1]: }
+2021-06-30T17:04:51.828027+00:00 heroku[router]: at=info method=GET path="/roomListing" host=fierce-eyrie-04629.herokuapp.com request_id=997ff3d0-5ecd-44ae-ac44-09dd3e650e0d fwd="173.34.220.177" dyno=web.1 connect=1ms service=3ms status=304 bytes=152 protocol=https
+2021-06-30T17:04:51.880792+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=4eff896a-9cee-4f2d-bec1-109a5a142350 fwd="173.34.220.177" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=https
+2021-06-30T17:04:51.886582+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=c5d58faa-fbe2-44e7-af87-adb7668aa036 fwd="173.34.220.177" dyno=web.1 connect=1ms service=6ms status=304 bytes=237 protocol=https
+2021-06-30T17:04:53.454144+00:00 heroku[router]: at=info method=GET path="/userRegistration" host=fierce-eyrie-04629.herokuapp.com request_id=f4e2870f-71e4-4473-a81c-6f23c3c3f90f fwd="173.34.220.177" dyno=web.1 connect=1ms service=4ms status=304 bytes=152 protocol=https
+2021-06-30T17:04:53.516832+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=f5ba4a06-d6e2-4eb6-a796-ccc92e9638ca fwd="173.34.220.177" dyno=web.1 connect=0ms service=11ms status=304 bytes=237 protocol=https
+2021-06-30T17:04:53.517855+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=1713428c-d380-4f27-97c3-a850369bdc4f fwd="173.34.220.177" dyno=web.1 connect=1ms service=11ms status=304 bytes=237 protocol=https
+2021-06-30T17:08:09.134832+00:00 heroku[router]: at=info method=POST path="/register-user" host=fierce-eyrie-04629.herokuapp.com request_id=b1f326f0-6937-43aa-a416-54678300a6ba fwd="173.34.220.177" dyno=web.1 connect=1ms service=8ms status=200 bytes=5578 protocol=https
+2021-06-30T17:08:09.204626+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=94dc7def-c9d3-457e-ace0-73befe4d4e69 fwd="173.34.220.177" dyno=web.1 connect=1ms service=3ms status=304 bytes=237 protocol=https
+2021-06-30T17:08:09.207709+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=1cfd79e2-ccc3-49fb-a04f-16df33962d3c fwd="173.34.220.177" dyno=web.1 connect=1ms service=5ms status=304 bytes=237 protocol=https
+2021-06-30T17:08:09.669860+00:00 app[web.1]: Error: Invalid login: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu
+2021-06-30T17:08:09.669870+00:00 app[web.1]: 534-5.7.14 FCcBRjxDOT17YofO0uAIxRJg9yZgRFeLcziNf_3Rn-uoZNwdAWKIjw-IyZ4wMrVJXaMLZ
+2021-06-30T17:08:09.669871+00:00 app[web.1]: 534-5.7.14 p2MITGSYd60ay4E6ZJFjN-yv-tH8NkLtysHu8elb4rmo-UbaJKtTbxMQL5FuPaWX>
+2021-06-30T17:08:09.669872+00:00 app[web.1]: 534-5.7.14 Please log in via your web browser and then try again.
+2021-06-30T17:08:09.669872+00:00 app[web.1]: 534-5.7.14  Learn more at
+2021-06-30T17:08:09.669873+00:00 app[web.1]: 534 5.7.14  https://support.google.com/mail/answer/78754 d16sm10605367qtj.69 - gsmtp
+2021-06-30T17:08:09.669873+00:00 app[web.1]: at SMTPConnection._formatError (/app/node_modules/nodemailer/lib/smtp-connection/index.js:774:19)
+2021-06-30T17:08:09.669874+00:00 app[web.1]: at SMTPConnection._actionAUTHComplete (/app/node_modules/nodemailer/lib/smtp-connection/index.js:1518:34)
+2021-06-30T17:08:09.669874+00:00 app[web.1]: at SMTPConnection.<anonymous> (/app/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+2021-06-30T17:08:09.669875+00:00 app[web.1]: at SMTPConnection._processResponse (/app/node_modules/nodemailer/lib/smtp-connection/index.js:937:20)
+2021-06-30T17:08:09.669875+00:00 app[web.1]: at SMTPConnection._onData (/app/node_modules/nodemailer/lib/smtp-connection/index.js:739:14)
+2021-06-30T17:08:09.669876+00:00 app[web.1]: at TLSSocket.SMTPConnection._onSocketData (/app/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+2021-06-30T17:08:09.669877+00:00 app[web.1]: at TLSSocket.emit (events.js:375:28)
+2021-06-30T17:08:09.669878+00:00 app[web.1]: at addChunk (internal/streams/readable.js:290:12)
+2021-06-30T17:08:09.669878+00:00 app[web.1]: at readableAddChunk (internal/streams/readable.js:265:9)
+2021-06-30T17:08:09.669879+00:00 app[web.1]: at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-06-30T17:08:09.669879+00:00 app[web.1]: code: 'EAUTH',
+2021-06-30T17:08:09.669880+00:00 app[web.1]: response: '534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu\n' +
+2021-06-30T17:08:09.669880+00:00 app[web.1]: '534-5.7.14 FCcBRjxDOT17YofO0uAIxRJg9yZgRFeLcziNf_3Rn-uoZNwdAWKIjw-IyZ4wMrVJXaMLZ\n' +
+2021-06-30T17:08:09.669880+00:00 app[web.1]: '534-5.7.14 p2MITGSYd60ay4E6ZJFjN-yv-tH8NkLtysHu8elb4rmo-UbaJKtTbxMQL5FuPaWX>\n' +
+2021-06-30T17:08:09.669881+00:00 app[web.1]: '534-5.7.14 Please log in via your web browser and then try again.\n' +
+2021-06-30T17:08:09.669881+00:00 app[web.1]: '534-5.7.14  Learn more at\n' +
+2021-06-30T17:08:09.669882+00:00 app[web.1]: '534 5.7.14  https://support.google.com/mail/answer/78754 d16sm10605367qtj.69 - gsmtp',
+2021-06-30T17:08:09.669882+00:00 app[web.1]: responseCode: 534,
+2021-06-30T17:08:09.669883+00:00 app[web.1]: command: 'AUTH PLAIN'
+2021-06-30T17:08:09.669884+00:00 app[web.1]: }
+2021-06-30T17:08:16.335679+00:00 heroku[router]: at=info method=GET path="/roomListing" host=fierce-eyrie-04629.herokuapp.com request_id=65f9415f-60f2-4450-9c57-ed466cb02846 fwd="173.34.220.177" dyno=web.1 connect=0ms service=3ms status=304 bytes=152 protocol=https
+2021-06-30T17:08:16.390475+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=b4ab1928-b888-44f9-935c-28e4037cb0e9 fwd="173.34.220.177" dyno=web.1 connect=1ms service=2ms status=304 bytes=237 protocol=https
+2021-06-30T17:08:16.401450+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=ab841805-51b4-4214-9aa1-4f24ed889a9a fwd="173.34.220.177" dyno=web.1 connect=1ms service=3ms status=304 bytes=237 protocol=https
+2021-06-30T17:08:17.814730+00:00 heroku[router]: at=info method=GET path="/userRegistration" host=fierce-eyrie-04629.herokuapp.com request_id=11ba9655-6759-4ef1-9a9d-77df8c1d7636 fwd="173.34.220.177" dyno=web.1 connect=1ms service=4ms status=304 bytes=152 protocol=https
+2021-06-30T17:08:17.875694+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=42e010c5-59cd-431e-832b-c72dc6643e72 fwd="173.34.220.177" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=https
+2021-06-30T17:08:17.882953+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=57f2c7a4-7cdb-49f6-bbae-cc56403b3118 fwd="173.34.220.177" dyno=web.1 connect=1ms service=5ms status=304 bytes=237 protocol=https
+2021-06-30T17:13:09.263518+00:00 heroku[router]: at=info method=GET path="/" host=fierce-eyrie-04629.herokuapp.com request_id=6e2453e1-198c-4a59-b173-e2c70b12bc5e fwd="173.34.220.177" dyno=web.1 connect=1ms service=6ms status=304 bytes=152 protocol=https
+2021-06-30T17:13:09.331882+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=79a1738e-653e-4a7a-a0be-b399498f98dc fwd="173.34.220.177" dyno=web.1 connect=0ms service=5ms status=304 bytes=237 protocol=https
+2021-06-30T17:13:09.332811+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=1316d365-ab07-42f2-aca5-008305aeb514 fwd="173.34.220.177" dyno=web.1 connect=1ms service=5ms status=304 bytes=237 protocol=https
+2021-06-30T17:13:09.387010+00:00 heroku[router]: at=info method=GET path="/banner.jpg" host=fierce-eyrie-04629.herokuapp.com request_id=a1d84922-5499-497d-b1bc-18269769ca1a fwd="173.34.220.177" dyno=web.1 connect=0ms service=7ms status=304 bytes=239 protocol=https
+2021-06-30T17:13:09.388012+00:00 heroku[router]: at=info method=GET path="/airBNB_description.png" host=fierce-eyrie-04629.herokuapp.com request_id=cb543c41-1d59-4b24-9458-327bf0a185cc fwd="173.34.220.177" dyno=web.1 connect=3ms service=5ms status=304 bytes=239 protocol=https
+2021-06-30T17:13:11.016401+00:00 heroku[router]: at=info method=GET path="/userRegistration" host=fierce-eyrie-04629.herokuapp.com request_id=87c2a8dd-0597-4556-9ece-2ca59b27ed1f fwd="173.34.220.177" dyno=web.1 connect=1ms service=6ms status=304 bytes=152 protocol=https
+2021-06-30T17:13:11.083789+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=fcd6dbf6-1da6-4ad3-947f-e206b50a7dc7 fwd="173.34.220.177" dyno=web.1 connect=0ms service=4ms status=304 bytes=237 protocol=https
+2021-06-30T17:13:11.084006+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=1fdded0f-6acd-4e0a-9c73-5adcdd6a10cf fwd="173.34.220.177" dyno=web.1 connect=4ms service=7ms status=304 bytes=237 protocol=https
+2021-06-30T17:13:36.805252+00:00 heroku[router]: at=info method=POST path="/register-user" host=fierce-eyrie-04629.herokuapp.com request_id=f0cef429-5c0a-4585-9e10-11ecd0c79a0d fwd="173.34.220.177" dyno=web.1 connect=1ms service=18ms status=200 bytes=5578 protocol=https
+2021-06-30T17:13:36.873516+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=468c1bef-8544-4c4d-b553-aefbca27909c fwd="173.34.220.177" dyno=web.1 connect=8ms service=13ms status=304 bytes=237 protocol=https
+2021-06-30T17:13:36.888772+00:00 heroku[router]: at=info method=GET path="/airBNB_Logo.png" host=fierce-eyrie-04629.herokuapp.com request_id=8adb70c9-40b0-457a-87a9-12b405b6884b fwd="173.34.220.177" dyno=web.1 connect=10ms service=19ms status=304 bytes=237 protocol=https
+2021-06-30T17:13:37.306541+00:00 app[web.1]: Error: Invalid login: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbt
+2021-06-30T17:13:37.306552+00:00 app[web.1]: 534-5.7.14 ZwNiMwjvuRECWXcnfyvFKM8_YGmvqdbAbNLMDh1L0xrM5LBTbaj5oPyfjiW_vJSy8ORFp
+2021-06-30T17:13:37.306553+00:00 app[web.1]: 534-5.7.14 dlpSB6jGRmGpM9fWxR7mbffwmg1L3iYzqXw-R2EWg-2ItVG6W60QXPvANPbmtf3B>
+2021-06-30T17:13:37.306553+00:00 app[web.1]: 534-5.7.14 Please log in via your web browser and then try again.
+2021-06-30T17:13:37.306554+00:00 app[web.1]: 534-5.7.14  Learn more at
+2021-06-30T17:13:37.306555+00:00 app[web.1]: 534 5.7.14  https://support.google.com/mail/answer/78754 j3sm11006298qth.63 - gsmtp
+2021-06-30T17:13:37.306555+00:00 app[web.1]: at SMTPConnection._formatError (/app/node_modules/nodemailer/lib/smtp-connection/index.js:774:19)
+2021-06-30T17:13:37.306555+00:00 app[web.1]: at SMTPConnection._actionAUTHComplete (/app/node_modules/nodemailer/lib/smtp-connection/index.js:1518:34)
+2021-06-30T17:13:37.306556+00:00 app[web.1]: at SMTPConnection.<anonymous> (/app/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+2021-06-30T17:13:37.306556+00:00 app[web.1]: at SMTPConnection._processResponse (/app/node_modules/nodemailer/lib/smtp-connection/index.js:937:20)
+2021-06-30T17:13:37.306556+00:00 app[web.1]: at SMTPConnection._onData (/app/node_modules/nodemailer/lib/smtp-connection/index.js:739:14)
+2021-06-30T17:13:37.306557+00:00 app[web.1]: at TLSSocket.SMTPConnection._onSocketData (/app/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+2021-06-30T17:13:37.306558+00:00 app[web.1]: at TLSSocket.emit (events.js:375:28)
+2021-06-30T17:13:37.306559+00:00 app[web.1]: at addChunk (internal/streams/readable.js:290:12)
+2021-06-30T17:13:37.306560+00:00 app[web.1]: at readableAddChunk (internal/streams/readable.js:265:9)
+2021-06-30T17:13:37.306560+00:00 app[web.1]: at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-06-30T17:13:37.306560+00:00 app[web.1]: code: 'EAUTH',
+2021-06-30T17:13:37.306561+00:00 app[web.1]: response: '534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbt\n' +
+2021-06-30T17:13:37.306561+00:00 app[web.1]: '534-5.7.14 ZwNiMwjvuRECWXcnfyvFKM8_YGmvqdbAbNLMDh1L0xrM5LBTbaj5oPyfjiW_vJSy8ORFp\n' +
+2021-06-30T17:13:37.306562+00:00 app[web.1]: '534-5.7.14 dlpSB6jGRmGpM9fWxR7mbffwmg1L3iYzqXw-R2EWg-2ItVG6W60QXPvANPbmtf3B>\n' +
+2021-06-30T17:13:37.306562+00:00 app[web.1]: '534-5.7.14 Please log in via your web browser and then try again.\n' +
+2021-06-30T17:13:37.306563+00:00 app[web.1]: '534-5.7.14  Learn more at\n' +
+2021-06-30T17:13:37.306563+00:00 app[web.1]: '534 5.7.14  https://support.google.com/mail/answer/78754 j3sm11006298qth.63 - gsmtp',
+2021-06-30T17:13:37.306563+00:00 app[web.1]: responseCode: 534,
+2021-06-30T17:13:37.306564+00:00 app[web.1]: command: 'AUTH PLAIN'
+2021-06-30T17:13:37.306564+00:00 app[web.1]: }
+2021-06-30T17:14:36.633841+00:00 heroku[router]: at=info method=GET path="/styles.css" host=fierce-eyrie-04629.herokuapp.com request_id=0a99769d-4262-4d22-8bed-ceae5aca9dc7 fwd="173.34.220.177" dyno=web.1 connect=1ms service=3ms status=304 bytes=237 protocol=https
